@@ -15,7 +15,7 @@ export function WorkSection() {
           }`}
         >
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Проекты
+            Портфолио
           </h2>
           <p className="font-mono text-sm text-foreground/60 md:text-base">/ Избранные работы</p>
         </div>
@@ -24,23 +24,23 @@ export function WorkSection() {
           {[
             {
               number: "01",
-              title: "ТехноСтарт",
-              category: "Корпоративный портал",
+              title: "Pitch-deck для стартапа",
+              category: "Презентация · 24 слайда",
               year: "2024",
               direction: "left",
             },
             {
               number: "02",
-              title: "АльфаТрейд",
-              category: "Финтех платформа",
+              title: "Фирменный стиль кофейни",
+              category: "Аватарки + коллаж + заголовки",
               year: "2024",
               direction: "right",
             },
             {
               number: "03",
-              title: "МедиаПульс",
-              category: "Медиа сервис",
-              year: "2023",
+              title: "Брендинг для психолога",
+              category: "Аватарка + баннер + оформление",
+              year: "2024",
               direction: "left",
             },
           ].map((project, i) => (

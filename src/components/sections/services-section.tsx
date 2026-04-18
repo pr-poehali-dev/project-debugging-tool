@@ -1,5 +1,32 @@
 import { useReveal } from "@/hooks/use-reveal"
 
+const services = [
+  {
+    title: "Презентация",
+    description: "Pitch-deck, корпоративные и учебные презентации. Структура, дизайн, анимации — всё в веб-формате.",
+    price: "от 1 500 ₽",
+    direction: "top",
+  },
+  {
+    title: "Аватарка",
+    description: "Профессиональный аватар для соцсетей, мессенджеров и сайта. Ретушь, обработка, фирменный стиль.",
+    price: "от 300 ₽",
+    direction: "right",
+  },
+  {
+    title: "Заголовок / Баннер",
+    description: "Обложки для YouTube, ВКонтакте, Telegram. Яркие заголовки с вашим текстом и фирменными цветами.",
+    price: "от 500 ₽",
+    direction: "left",
+  },
+  {
+    title: "Коллаж",
+    description: "Тематические коллажи для соцсетей, блогов и рекламы. Нестандартные идеи — обсуждаем индивидуально.",
+    price: "от 700 ₽",
+    direction: "bottom",
+  },
+]
+
 export function ServicesSection() {
   const { ref, isVisible } = useReveal(0.3)
 
@@ -17,32 +44,11 @@ export function ServicesSection() {
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Услуги
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Прайс-лист</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
-          {[
-            {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
-              direction: "top",
-            },
-            {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
-              direction: "right",
-            },
-            {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
-              direction: "left",
-            },
-            {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
-              direction: "bottom",
-            },
-          ].map((service, i) => (
+          {services.map((service, i) => (
             <ServiceCard key={i} service={service} index={i} isVisible={isVisible} />
           ))}
         </div>
@@ -56,7 +62,7 @@ function ServiceCard({
   index,
   isVisible,
 }: {
-  service: { title: string; description: string; direction: string }
+  service: { title: string; description: string; price: string; direction: string }
   index: number
   isVisible: boolean
 }) {
@@ -89,8 +95,11 @@ function ServiceCard({
         <div className="h-px w-8 bg-foreground/30 transition-all duration-300 group-hover:w-12 group-hover:bg-foreground/50" />
         <span className="font-mono text-xs text-foreground/60">0{index + 1}</span>
       </div>
-      <h3 className="mb-2 font-sans text-2xl font-light text-foreground md:text-3xl">{service.title}</h3>
-      <p className="max-w-sm text-sm leading-relaxed text-foreground/80 md:text-base">{service.description}</p>
+      <div className="mb-2 flex items-baseline justify-between gap-4">
+        <h3 className="font-sans text-2xl font-light text-foreground md:text-3xl">{service.title}</h3>
+        <span className="shrink-0 font-mono text-sm text-foreground/80 md:text-base">{service.price}</span>
+      </div>
+      <p className="max-w-sm text-sm leading-relaxed text-foreground/70 md:text-base">{service.description}</p>
     </div>
   )
 }
