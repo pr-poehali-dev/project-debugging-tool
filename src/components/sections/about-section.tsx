@@ -45,7 +45,7 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           {/* Right side - Stats with creative layout */}
           <div className="flex flex-col justify-center space-y-6 md:space-y-12">
             {[
-              { value: "200+", label: "Работ", sublabel: "Выполнено на заказ", direction: "right" },
+              { value: "100+", label: "Работ", sublabel: "Выполнено на заказ", direction: "right" },
               { value: "4", label: "Направления", sublabel: "Презентации, аватарки, заголовки, коллажи", direction: "left" },
               { value: "100%", label: "Веб-формат", sublabel: "Готово к публикации сразу", direction: "right" },
             ].map((stat, i) => {
