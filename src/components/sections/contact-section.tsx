@@ -48,12 +48,12 @@ export function ContactSection() {
                 <br />
                 ваш заказ
               </h2>
-              <p className="font-mono text-xs text-foreground/60 md:text-base">/ Напишите — отвечу быстро</p>
+              <p className="font-mono text-xs text-foreground/60 md:text-base">/ Jay Evans — отвечу быстро</p>
             </div>
 
             <div className="space-y-4 md:space-y-8">
               <a
-                href="mailto:hello@designlab.ru"
+                href="mailto:kukumberogurech@gmail.com"
                 className={`group block transition-all duration-700 ${
                   isVisible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0"
                 }`}
@@ -64,7 +64,7 @@ export function ContactSection() {
                   <span className="font-mono text-xs text-foreground/60">Email</span>
                 </div>
                 <p className="text-base text-foreground transition-colors group-hover:text-foreground/70 md:text-2xl">
-                  hello@designlab.ru
+                  kukumberogurech@gmail.com
                 </p>
               </a>
 
@@ -75,10 +75,18 @@ export function ContactSection() {
                 style={{ transitionDelay: "350ms" }}
               >
                 <div className="mb-1 flex items-center gap-2">
-                  <span className="font-mono text-xs text-foreground/60">Нестандартный запрос?</span>
+                  <span className="font-mono text-xs text-foreground/60">Telegram</span>
                 </div>
-                <p className="max-w-xs text-sm text-foreground/80 leading-relaxed md:text-base">
-                  Опишите идею в форме — уточним детали и рассчитаем стоимость индивидуально.
+                <a
+                  href="https://t.me/desinJay_bot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-foreground transition-colors hover:text-foreground/70 md:text-2xl"
+                >
+                  @desinJay_bot
+                </a>
+                <p className="mt-1 max-w-xs text-xs text-foreground/60 leading-relaxed">
+                  Если есть доступ к Telegram — пишите напрямую в бот, отвечу быстрее.
                 </p>
               </div>
 
