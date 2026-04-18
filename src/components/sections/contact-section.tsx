@@ -75,18 +75,10 @@ export function ContactSection() {
                 style={{ transitionDelay: "350ms" }}
               >
                 <div className="mb-1 flex items-center gap-2">
-                  <span className="font-mono text-xs text-foreground/60">Telegram</span>
+                  <span className="font-mono text-xs text-foreground/60">Нестандартный запрос?</span>
                 </div>
-                <a
-                  href="https://t.me/desinJay_bot"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base text-foreground transition-colors hover:text-foreground/70 md:text-2xl"
-                >
-                  @desinJay_bot
-                </a>
-                <p className="mt-1 max-w-xs text-xs text-foreground/60 leading-relaxed">
-                  Если есть доступ к Telegram — пишите напрямую в бот, отвечу быстрее.
+                <p className="max-w-xs text-sm text-foreground/80 leading-relaxed md:text-base">
+                  Опишите идею в форме — уточним детали и рассчитаем стоимость индивидуально.
                 </p>
               </div>
 
