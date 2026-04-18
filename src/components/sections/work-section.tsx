@@ -26,7 +26,7 @@ export function WorkSection() {
               number: "01",
               title: "Презентации",
               category: "Структура, дизайн и анимации в веб-формате",
-              year: "2026",
+              year: "2025",
               direction: "left",
             },
             {
