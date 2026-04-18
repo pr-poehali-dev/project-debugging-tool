@@ -24,7 +24,7 @@ export function WorkSection() {
           {[
             {
               number: "01",
-              title: "Презентация на тему «Республика Корея»",
+              title: "Презентации",
               category: "Структура, дизайн и анимации в веб-формате",
               year: "2026",
               direction: "left",
