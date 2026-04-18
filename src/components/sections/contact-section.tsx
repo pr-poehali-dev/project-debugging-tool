@@ -52,21 +52,41 @@ export function ContactSection() {
             </div>
 
             <div className="space-y-4 md:space-y-8">
-              <a
-                href="mailto:kukumberogurech@gmail.com"
+              <div
                 className={`group block transition-all duration-700 ${
                   isVisible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0"
                 }`}
                 style={{ transitionDelay: "200ms" }}
               >
-                <div className="mb-1 flex items-center gap-2">
+                <div className="mb-2 flex items-center gap-2">
                   <Mail className="h-3 w-3 text-foreground/60" />
-                  <span className="font-mono text-xs text-foreground/60">Email</span>
+                  <span className="font-mono text-xs text-foreground/60">Для заказа писать:</span>
                 </div>
-                <p className="text-base text-foreground transition-colors group-hover:text-foreground/70 md:text-2xl">
-                  kukumberogurech@gmail.com
-                </p>
-              </a>
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
+                    <span className="font-mono text-xs text-foreground/50">ТГ</span>
+                    <a
+                      href="https://t.me/desinJay_bot"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-base text-foreground transition-colors hover:text-foreground/70 md:text-xl"
+                    >
+                      @desinJay_bot
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="font-mono text-xs text-foreground/50">ВК</span>
+                    <a
+                      href="https://vk.com/youre_angell"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-base text-foreground transition-colors hover:text-foreground/70 md:text-xl"
+                    >
+                      @youre_angell
+                    </a>
+                  </div>
+                </div>
+              </div>
 
               <div
                 className={`transition-all duration-700 ${
@@ -78,7 +98,7 @@ export function ContactSection() {
                   <span className="font-mono text-xs text-foreground/60">Нестандартный запрос?</span>
                 </div>
                 <p className="max-w-xs text-sm text-foreground/80 leading-relaxed md:text-base">
-                  Опишите идею в форме — уточним детали и рассчитаем стоимость индивидуально.
+                  Опишите свою идею — уточним детали и рассчитаем стоимость индивидуально.
                 </p>
               </div>
 
